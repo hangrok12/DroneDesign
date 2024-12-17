@@ -179,7 +179,7 @@ void loop(){
       // Gyroscope와 Accelerometer로 부터 측정값을 읽음.
       ftnMPU6050GetData();
 
-    gyXAngVel = (float)gGyR / GYRO2DEG;
+      gyXAngVel = (float)gGyR / GYRO2DEG;
       gyYAngVel = (float)gGyP / GYRO2DEG;
       gyZAngVel = (float)gGyY / GYRO2DEG;
       gyXAngle = gyXAngle + gyXAngVel * gDelta * 0.000001;
